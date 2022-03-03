@@ -1,0 +1,46 @@
+.nav-item {
+	font-family: "Roboto", sans-serif;
+	font-size: xx-large;
+}
+.body_backround {
+	background-color: rgb(39, 38, 38);
+}
+.body_index {
+	position: relative;
+	background-image: url("../assets/img/index_beba2.jpg");
+	height: calc(100vh - 62px);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 0px;
+}
+
+footer {
+	background-color: black;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	left: 0;
+	padding: 1rem;
+}
+
+h1 {
+	color: rgb(194, 151, 207);
+	margin: 20px;
+	background-color: rgb(34, 5, 5);
+}
+
+h2 {
+	color: rgb(211, 193, 93);
+}
+
+h4 {
+	margin-bottom: 0px;
+}
+li {
+	list-style-type: none;
+}
+.footer2 {
+	position: relative;
+}
