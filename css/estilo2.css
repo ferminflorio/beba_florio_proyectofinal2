@@ -1,0 +1,215 @@
+body {
+	background-color: rgb(29, 29, 29);
+	position: relative;
+	margin: 0;
+	min-height: 100vh;
+}
+main {
+	background-color: rgb(39, 38, 38);
+	padding-bottom: 100px;
+	padding-top: 50px;
+}
+li {
+	list-style-type: none;
+}
+.main_nav_list_item:hover a {
+	transform: translateX(5px);
+}
+a {
+	color: rgb(223, 25, 25);
+	font-size: 30px;
+	text-decoration: none;
+	display: inline-block;
+	transition: transform 0.2s ease-out;
+}
+a:hover {
+	color: rgb(194, 151, 207);
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Roboto", sans-serif;
+}
+h1 {
+	text-align: center;
+	color: rgb(194, 151, 207);
+}
+h2 {
+	text-transform: initial;
+	color: rgb(211, 193, 93);
+}
+ul {
+	padding-left: 0px;
+}
+.contacto_label {
+	color: rgb(211, 193, 93);
+}
+
+textarea {
+	resize: none;
+}
+.button {
+	width: 15%;
+}
+
+.img_contacto {
+	width: 423px;
+}
+
+.header_parallax {
+	background-image: url("../assets/img/index_beba2.jpg");
+	height: calc(100vh - 67px);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 0px;
+}
+
+.main_nav_list {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-row-gap: 3px;
+	margin: 0;
+	padding: 10px;
+}
+
+.encabezado {
+	text-transform: uppercase;
+}
+
+.video_title {
+	text-align: center;
+	font-weight: 100;
+	font-style: italic;
+	color: rgb(211, 193, 93);
+	margin-bottom: 15px;
+}
+
+.videoclip {
+	width: 100%;
+	min-height: 400px;
+	transition: transform 0.2s ease-in;
+}
+.videoclip:hover {
+	transform: scale(0.9) translateX(20px);
+}
+
+.video1 {
+	grid-area: "video1";
+}
+.video2 {
+	grid-area: "video2";
+}
+.video3 {
+	grid-area: "video3";
+}
+
+.grid_item_video {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px 10px;
+}
+
+.grid_diseño {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-areas:
+		"grafica1"
+		"grafica2"
+		"grafica3";
+	text-align: center;
+	align-items: center;
+}
+.grafica1 {
+	grid-area: "grafica1";
+}
+.grafica2 {
+	grid-area: "grafica2";
+}
+.grafica3 {
+	grid-area: "grafica3";
+}
+
+.grid_contacto {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: "contacto1 contacto2";
+	grid-column-gap: 10%;
+	margin: 2%;
+}
+
+.grid_contacto_form {
+	display: inline;
+}
+.contacto1 {
+	grid-area: "contacto1";
+	display: flex;
+	justify-content: right;
+}
+.contacto2 {
+	grid-area: "contacto2";
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.form_item {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+	width: 45%;
+}
+.form_item_submit {
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.footer {
+	display: grid;
+}
+.footer_content_list {
+	display: flex;
+	justify-content: center;
+	margin: 0px;
+}
+.footer_content_item {
+	margin: 1rem;
+}
+.rrss:hover {
+	opacity: 0.5;
+}
+@media only screen and (max-width: 768px) {
+	.grid_videos {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas:
+			"video1"
+			"video2"
+			"video3";
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.grid_videos {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: "video1 video2 video3";
+		grid-column-gap: 40px;
+		padding: 0 20px;
+	}
+	.header_parallax {
+		height: 800px;
+	}
+}
+@media only screen and (min-width: 1025px) {
+	.grid_videos {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: "video1" "video2" "video3";
+		grid-column-gap: 40px;
+		padding: 0 20px;
+	}
+}

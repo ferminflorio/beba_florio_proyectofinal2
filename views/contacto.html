@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BEBA-Contacto</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="../assets/img/favicon-16x16.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/estilo2.css" />
+	</head>
+	<body class="body">
+		<header>
+			<nav>
+				<ul class="main_nav_list">
+					<li class="main_nav_list_item">
+						<a href="../index.html">INICIO</a>
+					</li>
+					<li class="main_nav_list_item">
+						<a href="direccion.html">DIRECCIÓN</a>
+					</li>
+					<li class="main_nav_list_item">
+						<a href="fotografia.html">FOTOGRAFÍA</a>
+					</li>
+					<li class="main_nav_list_item">
+						<a href="dgrafico.html">DISEÑO GRÁFICO</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Contactame!</h1>
+			<div class="grid_contacto">
+				<div class="grid_contacto_item contacto1">
+					<div>
+						<img
+							class="img_contacto"
+							src="../assets/img/img_contactos.jpg"
+							alt="img_contacto"
+						/>
+					</div>
+				</div>
+				<div class="grid_contacto_item contacto2">
+					<div class="grid_contacto_form">
+						<form action="#" onsubmit="alert('GRACIAS POR CONTACTARME!')">
+							<div class="form_item">
+								<label class="contacto_label" for="nombre"
+									>Nombre</label
+								>
+								<input type="text" name="nombre" id="nombre" />
+							</div>
+							<div class="form_item">
+								<label class="contacto_label" for="email"
+									>E-Mail</label
+								>
+								<input type="email" name="email" id="email" />
+							</div>
+							<div class="form_item">
+								<label class="contacto_label" for="mensaje"
+									>Mensaje:</label
+								>
+
+								<textarea
+									name="comentarios"
+									id="comentarios"
+									cols="30"
+									rows="10"
+									placeholder="..."
+								></textarea>
+							</div>
+							<div class="form_item form_item_submit"> 
+								<input type="submit" value="ENVIAR" />
+							</div>
+							</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<nav>
+				<div>
+					<ul class="footer_content_list">
+						<a href="#top">
+							<img class="footer_content_item rrss"src="https://icongr.am/clarity/collapse.svg?size=30&color=e00000" 
+							alt="top web" class="top_web" />
+							</a>
+						<li class="footer_content_item"><a href="contacto.html">CONTACTO</li>
+							<li class="footer_content_item rrss"> 
+								<a href="https://www.instagram.com/beburrri/" target="_blank">
+									<img src="https://icongr.am/entypo/instagram.svg?size=25&color=e00000" alt="instagram_logo">
+									
+								</a>
+							</li>
+							<li class="footer_content_item rrss">
+								<a href="https://www.facebook.com/belurizzaro" target="_blank">
+									<img src="https://icongr.am/entypo/facebook.svg?size=25&color=e00000
+									
+									" alt="facebook_logo">
+								</a>
+							</li>
+					</ul>
+				</div>
+			</nav>
+		</footer>
+	</body>
+</html>
